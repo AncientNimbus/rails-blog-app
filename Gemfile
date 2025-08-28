@@ -56,8 +56,10 @@ group :development do
   gem "web-console"
   gem "solargraph"
   gem "solargraph-rails"
+  gem "ruby-lsp-rails"
   gem "erb_lint"
   gem "rubocop-erb", "~> 0.6.0"
+  gem "htmlbeautifier", "~> 1.4"
 end
 
 group :test do
