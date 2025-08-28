@@ -56,6 +56,7 @@ group :development do
   gem "web-console"
   gem "solargraph"
   gem "solargraph-rails"
+  gem "erb_lint"
 end
 
 group :test do
