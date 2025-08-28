@@ -57,6 +57,7 @@ group :development do
   gem "solargraph"
   gem "solargraph-rails"
   gem "erb_lint"
+  gem "rubocop-erb", "~> 0.6.0"
 end
 
 group :test do
