@@ -50,4 +50,9 @@ Rails.application.configure do
 
   # Raise error when a before_action's only/except options reference missing actions.
   config.action_controller.raise_on_missing_callback_actions = true
+
+  # Get allowed hosts from environment variable
+  if ENV["NF_HOSTS"].present?
+     config.hosts = ENV["NF_HOSTS"]
+  end
 end
