@@ -91,8 +91,4 @@ Rails.application.configure do
   if ENV["NF_HOSTS"].present?
      config.hosts = ENV["NF_HOSTS"]
   end
-  
-  # Allow custom domain and North Flank subdomains
-  config.hosts << /.*\.realmflyer\.com/
-  config.hosts << /.*\.northflank\.app/
 end
