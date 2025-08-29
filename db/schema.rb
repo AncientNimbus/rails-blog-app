@@ -29,7 +29,7 @@ ActiveRecord::Schema[8.0].define(version: 2025_08_28_201022) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "status"
-    t.index ["article_id"], name: "index_comments_on_article_id"
+    t.index [ "article_id" ], name: "index_comments_on_article_id"
   end
 
   add_foreign_key "comments", "articles"
