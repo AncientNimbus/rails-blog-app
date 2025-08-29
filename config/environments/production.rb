@@ -89,6 +89,6 @@ Rails.application.configure do
 
   # Get allowed hosts from environment variable
   if ENV["NF_HOSTS"].present?
-     config.hosts = ENV["NF_HOSTS"]
+     config.hosts = ENV["NF_HOSTS"].split(",").map(&:strip)
   end
 end
